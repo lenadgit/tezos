@@ -1,0 +1,149 @@
+ 
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Typescript Webpack Starter
+  </title>
+
+  <meta name="description" content="Typescript Webpack Starter">
+<style>
+	.wrapper {
+background: rgba(228,179,235,1);
+background: -moz-linear-gradient(left, rgba(228,179,235,1) 0%, rgba(41,184,229,1) 50%, rgba(219,187,237,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(228,179,235,1)), color-stop(50%, rgba(41,184,229,1)), color-stop(100%, rgba(219,187,237,1)));
+background: -webkit-linear-gradient(left, rgba(228,179,235,1) 0%, rgba(41,184,229,1) 50%, rgba(219,187,237,1) 100%);
+background: -o-linear-gradient(left, rgba(228,179,235,1) 0%, rgba(41,184,229,1) 50%, rgba(219,187,237,1) 100%);
+background: -ms-linear-gradient(left, rgba(228,179,235,1) 0%, rgba(41,184,229,1) 50%, rgba(219,187,237,1) 100%);
+background: linear-gradient(to right, rgba(228,179,235,1) 0%, rgba(41,184,229,1) 50%, rgba(219,187,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4b3eb', endColorstr='#dbbbed', GradientType=1 );
+	}
+
+	h1 { 
+		text-align: center;
+		font-weight: 900;
+		font-size: 48px;
+		color: #800000;
+	}
+
+
+#blink1 {
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+}
+@-webkit-keyframes blink1 {
+  0% { color: #F7C4C4; }
+  50% { color: #DB7E7E;}
+  100% { color: #800000;}
+}
+@keyframes blink1 {
+  0% { color: #F7C4C4; }
+  50% { color: #DB7E7E;}
+  100% { color: #800000;}
+}
+
+
+	.container {
+		text-align: center;
+	}
+
+.form-input {
+	height: 45px;
+	width: 47%;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+
+.footer-textarea {
+	width: 50%;
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+input[type = "file"] {
+	width: 170px;
+}
+
+.attach {
+		text-transform: uppercase;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	font: 22px Open-Sans, sans-serif;
+	background: grey;
+
+	
+	width: 170px;
+	height: 50px;
+	margin-top: 30px;
+
+}
+
+.submit {
+	text-transform: uppercase;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	font: 22px Open-Sans, sans-serif;
+	background: #800000;
+
+
+	
+	width: 170px;
+	height: 50px;
+	margin-top: 30px;
+	cursor: pointer;
+
+}
+
+</style>
+</head>
+
+<body class = "wrapper">
+   <h1 id = "blink1">Smart Copyright</h1>
+  <br>
+  <div class = "container">
+  	<label>*Inventor</label>
+  	<br>
+  	<input type = "text" class = "form-input input-left" placeholder = "Name and Surname" required>
+ 
+  <br>
+  <label>*Title</label>
+  <br>
+  	<input type = "text" class = "form-input input-left" placeholder = "Name of the Project" required>
+ <br>
+ <br>
+
+  <label>*Description</label>
+  <br>
+  <br>
+    <textarea class = "footer-textarea" rows = "5">Short description</textarea>
+    <br>
+     <!--<input type="file" name="text-att" accept="pdf*" value = "Attach file">-->
+     <input type="button" class = "attach" value = "Attach file">
+
+            <input type = "submit" value = "Submit" class = "submit">
+            <br><br><br>
+  </div>
+  <br>
+  <p>By <a href="https://twitter.com/renaudin_yann">@renaudin_yann</a> </p>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
